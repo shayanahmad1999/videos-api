@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthenticatedSessionController;
 use App\Http\Controllers\Api\RegisterController;
 use App\Http\Controllers\Api\RegisteredUserController;
+use App\Http\Controllers\Api\VideoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -32,3 +33,8 @@ Route::get('/user-user', function (Request $request) {
 Route::post('/user-logout', [AuthenticatedSessionController::class, 'destroy'])
     ->middleware('auth:sanctum');
 
+
+// ---------- video api route ---------- 
+Route::middleware('auth:sanctum')->group(function () {
+    Route::apiResource('videos', VideoController::class)->parameters(['videos' => 'video']);
+});
