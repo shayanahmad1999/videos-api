@@ -16,7 +16,7 @@ class EnsureApiAuthenticated
     public function handle(Request $request, Closure $next)
     {
         if (!session()->has('api_token')) {
-            return redirect()->route('auth.login')->with('warning', 'Please log in first.');
+            return redirect()->route('login')->with('warning', 'Please log in first.');
         }
         return $next($request);
     }

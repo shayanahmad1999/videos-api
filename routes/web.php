@@ -13,8 +13,5 @@ Route::post('/auth/login',    [AuthenticatedController::class, 'login'])->name('
 Route::post('/auth/logout',   [AuthenticatedController::class, 'logout'])->name('auth.logout');
 
 Route::get('/dashboard', [AuthenticatedController::class, 'dashboard'])
-    ->middleware('auth:sanctum')
+    ->middleware('api.auth')
     ->name('dashboard');
-Route::get('/videos', function () {
-    return view('videos');
-});
