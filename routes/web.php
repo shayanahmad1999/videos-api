@@ -22,4 +22,4 @@ Route::get('/videos', function () {
 
 Route::get('/create', function () {
     return view('videos.videos');
-});
+})->name('videos.create')->middleware('api.auth');

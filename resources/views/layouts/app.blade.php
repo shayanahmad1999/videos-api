@@ -29,6 +29,7 @@
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="{{ route('auth.index') }}" class="font-semibold text-slate-800">Playlist Auth</a>
             <a href="{{ route('videos') }}" class="font-semibold text-slate-800">Watch Videos</a>
+            <a href="{{ route('videos.create') }}" class="font-semibold text-slate-800">Manage videos</a>
             <div class="flex items-center gap-3">
                 @if (session('api_user'))
                     <span class="text-sm text-slate-600">Hi,
