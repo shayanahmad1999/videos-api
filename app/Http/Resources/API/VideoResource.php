@@ -22,6 +22,24 @@ class VideoResource extends JsonResource
             'src'       => $this->src,
             'poster'    => $this->poster,
             'tracks'    => $this->tracks ?? [],
+
+            // ---------- optional better code ----------- //
+            // 'tracks' => $this->whenLoaded(
+            //     'tracks',
+            //     function () {
+            //         return $this->tracks->map(function ($t) {
+            //             return [
+            //                 'kind' => $t->kind ?? 'subtitles',
+            //                 'src' => $t->src,
+            //                 'srclang' => $t->srclang,
+            //                 'label' => $t->label,
+            //             ];
+            //         });
+            //     },
+            //     [],
+            // ),
+            // ---------- optional better code ----------- //
+
             'created_at' => $this->created_at?->toIso8601String(),
             'updated_at' => $this->updated_at?->toIso8601String(),
         ];
