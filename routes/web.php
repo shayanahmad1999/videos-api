@@ -15,3 +15,7 @@ Route::post('/auth/logout',   [AuthenticatedController::class, 'logout'])->name(
 Route::get('/dashboard', [AuthenticatedController::class, 'dashboard'])
     ->middleware('api.auth')
     ->name('dashboard');
+
+Route::get('/videos', function () {
+    return view('videos');
+})->name('videos');

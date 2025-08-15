@@ -28,6 +28,7 @@
     <nav class="border-b bg-white/70 backdrop-blur sticky top-0 z-40">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="{{ route('auth.index') }}" class="font-semibold text-slate-800">Archiwiz Auth</a>
+            <a href="{{ route('videos') }}" class="font-semibold text-slate-800">Watch Videos</a>
             <div class="flex items-center gap-3">
                 @if (session('api_user'))
                     <span class="text-sm text-slate-600">Hi,
