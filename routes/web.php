@@ -17,5 +17,9 @@ Route::get('/dashboard', [AuthenticatedController::class, 'dashboard'])
     ->name('dashboard');
 
 Route::get('/videos', function () {
-    return view('videos');
+    return view('videos.index');
 })->name('videos');
+
+Route::get('/create', function () {
+    return view('videos.videos');
+});

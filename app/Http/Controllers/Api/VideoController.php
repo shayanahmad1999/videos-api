@@ -24,7 +24,7 @@ class VideoController extends Controller
             $user = $request->user();
 
             $q = trim((string) $request->query('q', ''));
-            $perPage = min(max((int) $request->query('per_page', 20), 1), 100);
+            $perPage = min(max((int) $request->query('per_page', 1), 1), 100);
 
             $query = Video::query()->where('user_id', $user->id);
 
