@@ -5,13 +5,13 @@
         {{-- Left: Hero --}}
         <div class="hidden lg:block">
             <div class="rounded-2xl bg-white shadow-sm border p-8">
-                <h1 class="text-3xl font-bold tracking-tight text-slate-900">Welcome to Archiwiz</h1>
-                <p class="mt-3 text-slate-600">Create an account or sign in to continue. Secure, fast, and clean UI powered
-                    by Guzzle to your APIs.</p>
+                <h1 class="text-3xl font-bold tracking-tight text-slate-900">Welcome to Playlist</h1>
+                <p class="mt-3 text-slate-600">Create an account or sign in to start building your playlist.Enjoy videos from
+                    your favorite playlists anytime, anywhere.</p>
                 <ul class="mt-6 space-y-3 text-slate-700">
-                    <li>• Fully server-validated forms</li>
-                    <li>• Session-based bearer token storage</li>
-                    <li>• API-driven auth via Guzzle</li>
+                    <li>• Create and organize playlists filled with videos you love</li>
+                    <li>• Securely store your video library with session-based protection</li>
+                    <li>• Experience smooth playback and easy playlist management through powerful APIs</li>
                 </ul>
             </div>
         </div>

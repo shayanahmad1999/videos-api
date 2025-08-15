@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ $title ?? 'Auth' }} • Archiwiz</title>
+    <title>{{ $title ?? 'Auth' }} • Playlist</title>
     {{-- Tailwind via CDN (swap to Vite in prod) --}}
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,7 +27,7 @@
 <body class="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
     <nav class="border-b bg-white/70 backdrop-blur sticky top-0 z-40">
         <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="{{ route('auth.index') }}" class="font-semibold text-slate-800">Archiwiz Auth</a>
+            <a href="{{ route('auth.index') }}" class="font-semibold text-slate-800">Playlist Auth</a>
             <a href="{{ route('videos') }}" class="font-semibold text-slate-800">Watch Videos</a>
             <div class="flex items-center gap-3">
                 @if (session('api_user'))
@@ -78,7 +78,7 @@
     </main>
 
     <footer class="max-w-5xl mx-auto p-6 text-center text-xs text-slate-500">
-        &copy; {{ date('Y') }} Archiwiz Group
+        &copy; {{ date('Y') }} Playlist Group
     </footer>
 </body>
 
